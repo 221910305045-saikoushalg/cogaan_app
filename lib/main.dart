@@ -7,9 +7,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'COGAAN',
+      title: 'COGAAN official app',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(title: 'COGAAN'),
     );
@@ -26,19 +26,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         appBar: AppBar(
-
           title: Text(widget.title),
         ),
-        body: Center(
-            child:Text('Hello World!')
-        )
-    );
-
+        body: Center(child: Text('Hello World!')));
   }
 }
